@@ -4,10 +4,8 @@
 
 @layer base {
   body {
-    @apply dark:bg-black;
-    @apply dark:text-white;
-
-
+    @apply bg-trueWhite text-black
+             dark:bg-black  dark:text-white;
   }
 
   /* width */
