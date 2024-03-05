@@ -20,7 +20,7 @@ function changeColor() {
       <div>
         <span>Hello, I'm</span>
         <br />
-        <h1 @click="changeColor" :class="`font-black text-8xl mb-6 lg:text-9xl text-00 ${randomColor} duration-1000 transition-colors`">Syafiq</h1>
+        <h1 @click="changeColor" :class="`select-none font-black text-8xl mb-6 lg:text-9xl text-00 ${randomColor} duration-1000 transition-colors`">Syafiq</h1>
       </div>
     </div>
     <div class="hidden lg:flex justify-center">
