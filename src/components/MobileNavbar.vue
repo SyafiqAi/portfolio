@@ -36,4 +36,8 @@ function hideNavbar() {
 
 const navbar = ref(null)
 onClickOutside(navbar, () => hideNavbar())
+
+watch(isDark, () => {
+    localStorage.theme =  isDark.value ? 'dark' : null
+})
 </script>
