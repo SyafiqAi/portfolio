@@ -17,4 +17,7 @@
     strong {
       @apply font-black
     }
+    section p {
+      @apply text-justify;
+    }
 }

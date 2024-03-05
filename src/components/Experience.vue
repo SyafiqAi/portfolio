@@ -2,7 +2,7 @@
     <section>
         <h2 class="sticky">Experience</h2>
 
-        <div class="*:pb-6 max-w-[40vw] *:text-justify">
+        <div class="*:pb-6 max-w-[40vw]">
             <p>
                 Digital Systems Malaysia - Worked in a team of 7 developers, contributing to the 
                 development of a customer-facing website using an <strong>agile development</strong> 

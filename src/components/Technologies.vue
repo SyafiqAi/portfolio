@@ -1,7 +1,7 @@
 <template>
     <section class="">
         <h2 class="sticky top-0">Technologies</h2>
-            <ul class="*:pb-6 max-w-[40vw] *:text-justify">
+            <ul class="*:pb-6 max-w-[40vw]">
                 <li>
                     Fundamentals of <strong>HTML</strong> <strong>CSS</strong> and <strong>JS</strong>.
                 </li>
