@@ -20,6 +20,11 @@ const navbarVisible = ref(false)
 function toggleNavbar() {
     navbarVisible.value = !navbarVisible.value
 }
+function hideNavbar() {
+    if (navbarVisible.value) {
+        toggleNavbar();
+    }
+}
 
 const navbar = ref(null)
 onClickOutside(navbar, () => hideNavbar())
