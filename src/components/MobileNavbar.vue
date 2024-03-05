@@ -1,8 +1,13 @@
 <template>
-    <nav class="sticky top-0 shadow-md bg-black" ref="navbar">
+    <nav class="sticky top-0 shadow-md dark:bg-black bg-trueWhite flex" ref="navbar">
         <div class="p-6 w-fit transition scale-150" :class="{'scale-90': navbarVisible}" @click="toggleNavbar()">
             <BurgerMenuIcon />
         </div>
+        <div @click="toggleDark()" class="flex items-center ml-auto p-6">
+            <MoonIcon v-if="isDark"/>
+            <SunIcon v-else/>
+        </div>
+
         <div class="flex flex-col transition absolute backdrop-blur-lg h-dvh" :class="{'-translate-x-full': !navbarVisible}" >
             <RouterLink @click.native="toggleNavbar()" class="p-6 w-[50vw] hover:bg-white hover:bg-opacity-5" to="/">home</RouterLink>
             <RouterLink @click.native="toggleNavbar()" class="p-6 w-[50vw] hover:bg-white hover:bg-opacity-5" to="/about">about</RouterLink>
@@ -15,6 +20,9 @@
 import { ref, watch } from "vue";
 import { onClickOutside } from '@vueuse/core'
 import BurgerMenuIcon from '../assets/icons/BurgerMenuIcon.vue'
+import SunIcon from "@/assets/icons/SunIcon.vue";
+import MoonIcon from "@/assets/icons/MoonIcon.vue";
+import { useDark, useToggle } from '@vueuse/core'
 
 const navbarVisible = ref(false)
 function toggleNavbar() {
@@ -28,4 +36,8 @@ function hideNavbar() {
 
 const navbar = ref(null)
 onClickOutside(navbar, () => hideNavbar())
+
+
+const isDark = useDark()
+const toggleDark = useToggle(isDark)
 </script>
