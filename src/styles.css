@@ -14,4 +14,7 @@
     .box-red {
         @apply border border-red-600
     }
+    strong {
+      @apply font-black
+    }
 }
