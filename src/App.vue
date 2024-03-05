@@ -18,7 +18,7 @@ import MobileNavbar from './components/MobileNavbar.vue'
   <DesktopNavbar v-if="!isMobile()"/>
   <MobileNavbar v-else />
   
-  <div class="m-8 lg:my-16 lg:mx-64">
+  <div>
     <RouterView/>
   </div>
 </template>

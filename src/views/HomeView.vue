@@ -6,13 +6,16 @@ import Technologies from '../components/Technologies.vue'
 </script>
 
 <template>
-  <header>
-    <span>Hello, I'm</span>
-    <br />
-    <h1 class="font-black text-8xl mb-6 lg:text-9xl">Syafiq</h1>
-    <br>
+  <header class="lg:h-screen flex justify-center mt-32 lg:items-center lg:justify-normal lg:mx-32 lg:my-0">
+    <div>
+      <span>Hello, I'm</span>
+      <br />
+      <h1 class="font-black text-8xl mb-6 lg:text-9xl">Syafiq</h1>
+    </div>
   </header>
-  <main>
+  <main class="m-8 lg:my-16 lg:mx-64">
+      <div class="h-16"></div>
+
       <Introduction />
 
       <div class="h-16"></div>
