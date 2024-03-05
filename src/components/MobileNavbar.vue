@@ -1,14 +1,14 @@
 <template>
-    <nav class="sticky top-0 shadow-md dark:bg-black bg-trueWhite flex" ref="navbar">
-        <div class="p-6 w-fit transition scale-150" :class="{'scale-90': navbarVisible}" @click="toggleNavbar()">
-            <BurgerMenuIcon />
-        </div>
-        <div @click="toggleDark()" class="flex items-center ml-auto p-6">
+    <nav class="sticky top-0 shadow-md dark:bg-black bg-trueWhite" ref="navbar">
+        <div @click="toggleDark()" class="ml-auto p-6 inline-block">
             <MoonIcon v-if="isDark"/>
             <SunIcon v-else/>
         </div>
+        <div class="p-6 w-fit transition scale-150 inline-block fixed right-0" :class="{'scale-90': navbarVisible}" @click="toggleNavbar()">
+            <BurgerMenuIcon />
+        </div>
 
-        <div class="flex flex-col transition absolute backdrop-blur-lg h-dvh" :class="{'-translate-x-full': !navbarVisible}" >
+        <div class="flex flex-col transition absolute backdrop-blur-lg h-dvh right-0" :class="{'opacity-0': !navbarVisible}" >
             <RouterLink @click.native="toggleNavbar()" class="p-6 w-[50vw] hover:bg-white hover:bg-opacity-5" to="/">home</RouterLink>
             <RouterLink @click.native="toggleNavbar()" class="p-6 w-[50vw] hover:bg-white hover:bg-opacity-5" to="/about">about</RouterLink>
             <RouterLink @click.native="toggleNavbar()" class="p-6 w-[50vw] hover:bg-white hover:bg-opacity-5" to="/contact">contact</RouterLink>
