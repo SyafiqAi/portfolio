@@ -38,6 +38,6 @@ const navbar = ref(null)
 onClickOutside(navbar, () => hideNavbar())
 
 watch(isDark, () => {
-    localStorage.theme =  isDark.value ? 'dark' : null
+    localStorage.theme =  isDark.value ? 'dark' : null //remember the user's choice to avoid FOUC
 })
 </script>
