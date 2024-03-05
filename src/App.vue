@@ -4,17 +4,19 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
   <header>
-      <nav class="my-6">
-        <RouterLink class="pl-8 pr-16 hover:underline" to="/">Home</RouterLink>
-        <RouterLink class="p-16 hover:underline" to="/about">About</RouterLink>
-        <RouterLink class="p-16 hover:underline" to="/contact">Contact</RouterLink>
+      <nav class="*:transition-colors duration-75 flex justify-end">
+        <RouterLink class="px-16 py-6 hover:bg-white hover:bg-opacity-5" to="/">home</RouterLink>
+        <RouterLink class="px-16 py-6 hover:bg-white hover:bg-opacity-5" to="/about">about</RouterLink>
+        <RouterLink class="px-16 py-6 hover:bg-white hover:bg-opacity-5" to="/contact">contact</RouterLink>
       </nav>
     <div>
 
     </div>
   </header>
 
-  <RouterView />
+  <div class="m-16">
+    <RouterView/>
+  </div>
 </template>
 
 <style scoped>
