@@ -11,10 +11,14 @@
 </template>
 
 <script setup>
+import { watch } from 'vue'
 import MoonIcon from '../assets/icons/MoonIcon.vue'
 import SunIcon from '../assets/icons/SunIcon.vue'
 import {toggleDark, isDark} from '../utilities/toggleDark.js'
 
 
+watch(isDark, () => {
+    localStorage.theme =  isDark.value ? 'dark' : null
+})
 
 </script>
