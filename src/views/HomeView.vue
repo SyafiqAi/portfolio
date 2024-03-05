@@ -3,7 +3,7 @@ import Introduction from '../components/Introduction.vue'
 import Education from '../components/Education.vue'
 import Experience from '../components/Experience.vue'
 import Technologies from '../components/Technologies.vue'
-import geometryArt from '../assets/geometry_art.svg'
+import GeometryArt from '../assets/GeomteryArt.vue'
 </script>
 
 <template>
@@ -17,7 +17,7 @@ import geometryArt from '../assets/geometry_art.svg'
     </div>
     <div class="hidden lg:flex justify-center">
       <figure>
-        <img :src="geometryArt" alt="">
+        <GeometryArt />
       </figure>
     </div>
   </header>
