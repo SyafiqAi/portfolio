@@ -6,15 +6,16 @@ import Technologies from '../components/Technologies.vue'
 </script>
 
 <template>
-  <header class="">
-    <span class="">Hello, I'm</span>
+  <header>
+    <span>Hello, I'm</span>
     <br />
-    <h1 class="font-black text-9xl">Syafiq</h1>
+    <h1 class="font-black text-8xl mb-6 lg:text-9xl">Syafiq</h1>
+    <br>
   </header>
   <main>
       <Introduction />
 
-      <div class="h-32"></div>
+      <div class="h-16"></div>
       
       <Education />
 
