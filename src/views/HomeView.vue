@@ -1,5 +1,6 @@
 <script setup>
 import Introduction from '../components/Introduction.vue'
+import Education from '../components/Education.vue'
 </script>
 
 <template>
@@ -9,11 +10,10 @@ import Introduction from '../components/Introduction.vue'
     <h1 class="font-black text-9xl">Syafiq</h1>
   </header>
   <main>
-    <section>
       <Introduction />
-    </section>
-    <section>
 
-    </section>
+      <div class="h-32"></div>
+      
+      <Education />
   </main>
 </template>

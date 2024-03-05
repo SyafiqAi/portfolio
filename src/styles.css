@@ -8,6 +8,9 @@
       @apply dark:text-white;
       /* @apply font */
     }
+    h2 {
+      @apply font-bold text-5xl my-6;
+    }
     .box-red {
         @apply border border-red-600
     }
