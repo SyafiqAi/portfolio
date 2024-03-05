@@ -2,6 +2,7 @@
 import Introduction from '../components/Introduction.vue'
 import Education from '../components/Education.vue'
 import Experience from '../components/Experience.vue'
+import Technologies from '../components/Technologies.vue'
 </script>
 
 <template>
@@ -20,5 +21,9 @@ import Experience from '../components/Experience.vue'
       <div class="h-16"></div>
 
       <Experience />
+
+      <div class="h-16"></div>
+
+      <Technologies />
   </main>
 </template>
