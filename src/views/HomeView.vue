@@ -4,7 +4,7 @@ import Education from '../components/Education.vue'
 import Experience from '../components/Experience.vue'
 import Technologies from '../components/Technologies.vue'
 import GeometryArt from '../assets/GeomteryArt.vue'
-import { computed, ref } from 'vue'
+import { ref } from 'vue'
 import { colors } from '../utilities/colors.js'
 
 const randomColor = ref('white')
@@ -20,7 +20,7 @@ function changeColor() {
       <div>
         <span>Hello, I'm</span>
         <br />
-        <h1 @click="changeColor" :class="`select-none font-black text-8xl mb-6 lg:text-9xl text-00 ${randomColor} duration-1000 transition-colors`">Syafiq</h1>
+        <h1 @click="changeColor" :class="randomColor" class="select-none font-black text-8xl mb-6 lg:text-9xl duration-1000 transition-colors">Syafiq</h1>
       </div>
     </div>
     <div class="hidden lg:flex justify-center">
