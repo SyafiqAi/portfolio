@@ -13,10 +13,8 @@
 <script setup>
 import MoonIcon from '../assets/icons/MoonIcon.vue'
 import SunIcon from '../assets/icons/SunIcon.vue'
-import { useDark, useToggle } from '@vueuse/core'
+import {toggleDark, isDark} from '../utilities/toggleDark.js'
 
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
 
 
 </script>

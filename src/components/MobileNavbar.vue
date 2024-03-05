@@ -22,7 +22,7 @@ import { onClickOutside } from '@vueuse/core'
 import BurgerMenuIcon from '../assets/icons/BurgerMenuIcon.vue'
 import SunIcon from "@/assets/icons/SunIcon.vue";
 import MoonIcon from "@/assets/icons/MoonIcon.vue";
-import { useDark, useToggle } from '@vueuse/core'
+import {toggleDark, isDark} from '../utilities/toggleDark.js'
 
 const navbarVisible = ref(false)
 function toggleNavbar() {
@@ -36,8 +36,4 @@ function hideNavbar() {
 
 const navbar = ref(null)
 onClickOutside(navbar, () => hideNavbar())
-
-
-const isDark = useDark()
-const toggleDark = useToggle(isDark)
 </script>
