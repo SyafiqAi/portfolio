@@ -5,12 +5,9 @@ import Experience from '../components/Experience.vue'
 import Technologies from '../components/Technologies.vue'
 import GeometryArt from '../assets/GeomteryArt.vue'
 import { ref } from 'vue'
-import { colors } from '../utilities/colors.js'
+import { getRandomColor } from '../utilities/colors.js'
 
-const randomColor = ref('white')
-function changeColor() {
-  randomColor.value = colors[Math.floor(Math.random() * colors.length)];
-}
+const color = ref('white')
 
 </script>
 
@@ -20,11 +17,13 @@ function changeColor() {
       <div>
         <span>Hello, I'm</span>
         <br />
-        <h1 @click="changeColor" :class="randomColor" class="select-none font-black text-8xl mb-6 lg:text-9xl duration-1000 transition-colors">Syafiq</h1>
+        <h1 @click="() => {color = getRandomColor()}" :class="color" class="select-none font-black text-8xl mb-6 lg:text-9xl duration-1000 transition-colors">
+          Syafiq
+        </h1>
       </div>
     </div>
     <div class="hidden lg:flex justify-center">
-      <figure @click="changeColor" :class="randomColor" class="transition-colors duration-1000">
+      <figure @click="() => {color = getRandomColor()}":class="color" class="transition-colors duration-1000">
         <GeometryArt />
       </figure>
     </div>
