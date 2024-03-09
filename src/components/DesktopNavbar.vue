@@ -18,7 +18,8 @@ import {toggleDark, isDark} from '../utilities/toggleDark.js'
 
 
 watch(isDark, () => {
-    localStorage.theme =  isDark.value ? 'dark' : null //remember the user's choice to avoid FOUC
+    localStorage.theme =  isDark.value ? 'dark' : null
+    //when changing light/dark mode, remember the user's choice to avoid FOUC
 })
 
 </script>
