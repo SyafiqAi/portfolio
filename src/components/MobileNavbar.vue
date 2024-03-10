@@ -45,6 +45,10 @@ watch(isDark, () => {
 })
 
 // disable scrolling when mobile navbar is visible.
+// when adding and removing the disable-scrollbar class, 
+// the page scrolls to the top.
+// we have to manually scroll to the current position
+// when adding and removing the class.
 const html = document.documentElement;
 let scrollTop;
 watch(navbarVisible, () => {
