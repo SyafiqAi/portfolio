@@ -8,7 +8,7 @@
             <BurgerMenuIcon />
         </div>
 
-        <div class="fixed w-full h-full bg-white dark:bg-black opacity-75" :class="{'hidden': !navbarVisible}" @click="hideNavbar()"></div>
+        <div class="fixed top-0 w-full h-full bg-white dark:bg-black opacity-75" :class="{'hidden': !navbarVisible}" @click="hideNavbar()"></div>
 
         <div class="flex flex-col fixed backdrop-blur-lg h-dvh right-0 top-0 justify-center" :class="{'hidden': !navbarVisible}" >
             <RouterLink @click.native="toggleNavbar()" class="p-6 w-[50vw] hover:bg-white hover:bg-opacity-5" to="/">home</RouterLink>
