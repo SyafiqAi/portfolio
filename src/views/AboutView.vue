@@ -4,10 +4,10 @@
   >
     <div class="flex justify-center my-12">
       <figure class="size-80 lg:size-96 rounded-full overflow-hidden">
-        <!-- <div class="bg-white size-full flex justify-center items-center text-black text-9xl font-mono">
-          :)
-        </div> -->
-        <img :src="profilePic" alt="" />
+        <div class="bg-white size-full flex justify-center items-center text-black text-9xl">
+          >_<
+        </div>
+        <!-- <img :src="profilePic" alt="" /> -->
       </figure>
     </div>
     <main class="lg:w-[36rem] mx-8 mb-8 lg:mb-0 flex flex-col items-center lg:items-start">
@@ -35,9 +35,8 @@
         </p>
       </section>
 
-      <br />
 
-      <div>
+      <div class="mt-12 lg:flex justify-around w-full">
         <a href="https://github.com/SyafiqAi" class="flex items-center">
           <figure class="size-12 inline-block mr-2">
             <GithubLogo />

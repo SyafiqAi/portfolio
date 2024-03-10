@@ -3,7 +3,7 @@ import Introduction from '../components/Introduction.vue'
 import Education from '../components/Education.vue'
 import Experience from '../components/Experience.vue'
 import Technologies from '../components/Technologies.vue'
-import GeometryArt from '../assets/GeometryArt.vue'
+import GeometryArt from '../assets/figures/GeometryArt.vue'
 import { ref } from 'vue'
 import { changeColor } from '../utilities/colors.js'
 
