@@ -4,8 +4,13 @@
 
 @layer base {
   body {
-    @apply bg-trueWhite text-black
-             dark:bg-black  dark:text-white;
+    @apply bg-trueWhite text-black dark:bg-black dark:text-white;
+  }
+
+  .disable-scrollbar {
+    position: fixed;
+    overflow-y: scroll;
+    width: 100%;
   }
 
   /* width */
@@ -21,6 +26,7 @@
   /* Handle */
   ::-webkit-scrollbar-thumb {
     @apply bg-white bg-opacity-50
+    /* @apply hidden */
   }
 
   /* Handle on hover */
