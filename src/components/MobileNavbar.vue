@@ -1,5 +1,5 @@
 <template>
-    <nav class="sticky top-0 shadow-md dark:bg-black bg-trueWhite" ref="navbar">
+    <nav class="fixed top-0 shadow-md dark:bg-black bg-trueWhite w-lvw" ref="navbar">
         <div @click="toggleDark()" class="ml-auto p-6 inline-block">
             <MoonIcon v-if="isDark"/>
             <SunIcon v-else/>
@@ -8,7 +8,9 @@
             <BurgerMenuIcon />
         </div>
 
-        <div class="flex flex-col absolute backdrop-blur-lg h-dvh right-0" :class="{'hidden': !navbarVisible}" >
+        <div class="fixed w-full h-full bg-white dark:bg-black opacity-75" :class="{'hidden': !navbarVisible}" @click="hideNavbar()"></div>
+
+        <div class="flex flex-col fixed backdrop-blur-lg h-dvh right-0 top-0 justify-center" :class="{'hidden': !navbarVisible}" >
             <RouterLink @click.native="toggleNavbar()" class="p-6 w-[50vw] hover:bg-white hover:bg-opacity-5" to="/">home</RouterLink>
             <RouterLink @click.native="toggleNavbar()" class="p-6 w-[50vw] hover:bg-white hover:bg-opacity-5" to="/about">about</RouterLink>
             <RouterLink @click.native="toggleNavbar()" class="p-6 w-[50vw] hover:bg-white hover:bg-opacity-5" to="/contact">contact</RouterLink>
@@ -40,5 +42,21 @@ onClickOutside(navbar, () => hideNavbar())
 watch(isDark, () => {
     localStorage.theme =  isDark.value ? 'dark' : null 
     //when changing light/dark mode, remember the user's choice to avoid FOUC
+})
+
+// disable scrolling when mobile navbar is visible.
+const html = document.documentElement;
+let scrollTop;
+watch(navbarVisible, () => {
+    if(navbarVisible.value) {
+        scrollTop = html.scrollTop;
+        document.body.className = `disable-scrollbar`
+        document.body.style.top = `-${scrollTop}px`
+        // tailwind doesn't allow dynamic classnames
+        // so had to resort to inline style
+    } else {
+        document.body.className = ''
+        html.scrollTop = scrollTop;
+    }
 })
 </script>
