@@ -1,12 +1,12 @@
 export const colors = [
     'text-teal-500',
-    'text-cyan-500',
-    'text-sky-500',
-    'text-lime-500',
     'text-emerald-500',
-    'white'
+    ''
   ]
   
-export function getRandomColor() {
-  return colors[Math.floor(Math.random() * colors.length)];
+let i = -1
+export function changeColor() {
+  i++
+  if (i == colors.length) { i = 0}
+  return colors[i];
 }

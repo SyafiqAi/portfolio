@@ -4,9 +4,9 @@
             <MoonIcon v-if="isDark"/>
             <SunIcon v-else/>
         </div>
-        <RouterLink class="py-6 dark:hover:bg-white hover:bg-black dark:hover:bg-opacity-5 hover:bg-opacity-5" to="/">home</RouterLink>
-        <RouterLink class="py-6 dark:hover:bg-white hover:bg-black dark:hover:bg-opacity-5 hover:bg-opacity-5" to="/about">about</RouterLink>
-        <RouterLink class="py-6 dark:hover:bg-white hover:bg-black dark:hover:bg-opacity-5 hover:bg-opacity-5" to="/contact">contact</RouterLink>
+        <RouterLink class="py-6 dark:hover:bg-white hover:bg-black dark:hover:bg-opacity-5 hover:bg-opacity-5" to="/">Home</RouterLink>
+        <RouterLink class="py-6 dark:hover:bg-white hover:bg-black dark:hover:bg-opacity-5 hover:bg-opacity-5" to="/about">About</RouterLink>
+        <RouterLink class="py-6 dark:hover:bg-white hover:bg-black dark:hover:bg-opacity-5 hover:bg-opacity-5" to="/contact">Contact</RouterLink>
     </nav>
 </template>
 

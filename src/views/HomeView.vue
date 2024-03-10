@@ -5,9 +5,9 @@ import Experience from '../components/Experience.vue'
 import Technologies from '../components/Technologies.vue'
 import GeometryArt from '../assets/GeometryArt.vue'
 import { ref } from 'vue'
-import { getRandomColor } from '../utilities/colors.js'
+import { changeColor } from '../utilities/colors.js'
 
-const color = ref('white')
+const color = ref('')
 
 </script>
 
@@ -17,13 +17,13 @@ const color = ref('white')
       <div>
         <span>Hello, I'm</span>
         <br />
-        <h1 @click="() => {color = getRandomColor()}" :class="color" class="select-none font-black text-8xl mb-6 lg:text-9xl duration-1000 transition-colors">
+        <h1 @click="() => {color = changeColor()}" :class="color" class="select-none font-black text-8xl mb-6 lg:text-9xl duration-500 transition-colors">
           Syafiq
         </h1>
       </div>
     </div>
     <div class="hidden lg:flex justify-center">
-      <figure @click="() => {color = getRandomColor()}":class="color" class="transition-colors duration-1000 h-96">
+      <figure @click="() => {color = changeColor()}":class="color" class="transition-colors duration-500 h-96">
         <GeometryArt />
       </figure>
     </div>
