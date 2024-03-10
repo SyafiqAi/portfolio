@@ -12,7 +12,7 @@ const color = ref('white')
 </script>
 
 <template>
-  <header class="lg:h-screen flex justify-center mt-32 lg:items-center lg:justify-normal lg:mx-32 lg:my-0 lg:grid lg:grid-cols-2">
+  <header class="lg:h-screen flex justify-center mt-32 lg:items-center lg:justify-normal lg:mx-32 lg:my-0 lg:grid lg:grid-cols-2 lg:py-[72px]">
     <div class="flex justify-center">
       <div>
         <span>Hello, I'm</span>

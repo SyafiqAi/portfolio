@@ -1,6 +1,6 @@
 <template>
   <div
-    class="lg:h-screen justify-center lg:items-center lg:justify-normal lg:mx-32 lg:my-0 lg:grid lg:grid-cols-2 z-0 overflow-y-scroll"
+    class="lg:h-screen justify-center lg:items-center lg:justify-normal lg:mx-32 lg:my-0 lg:grid lg:grid-cols-2 z-0 lg:py-[72px]"
   >
     <div class="flex justify-center my-12">
       <figure class="size-80 lg:size-96 rounded-full overflow-hidden">
@@ -10,12 +10,12 @@
         <img :src="profilePic" alt="" />
       </figure>
     </div>
-    <main class="lg:w-[36rem] mx-8 mb-16 lg:mb-0">
+    <main class="lg:w-[36rem] mx-8 mb-8 lg:mb-0 flex flex-col items-center lg:items-start">
       <h1 class="font-bold text-5xl mb-12">About</h1>
       <section>
         <p>
-          My name is Syafiq Aiman and I am a student with an interest
-          in web development. I first became interested in this field during my
+          My name is Syafiq Aiman and I am a student with an interest in web
+          development. I first became interested in this field during my
           internship at DSM where I had the opportunity to learn and work with
           Vue.
         </p>
@@ -34,10 +34,34 @@
           programmers and developers in the future.
         </p>
       </section>
+
+      <br />
+
+      <div>
+        <a href="https://github.com/SyafiqAi" class="flex items-center">
+          <figure class="size-12 inline-block mr-2">
+            <GithubLogo />
+          </figure>
+          SyafiqAi
+        </a>
+
+        <br>
+
+        <div class="flex items-center">
+          <figure class="size-12 inline-block mr-2">
+            <EmailLogo />
+          </figure>
+          isyafiq@gmail.com
+        </div>
+      </div>
+
     </main>
+
   </div>
 </template>
 
 <script setup>
-import profilePic from "@/assets/tails2.jpg";
+import EmailLogo from "@/assets/logos/EmailLogo.vue";
+import GithubLogo from "@/assets/logos/GithubLogo.vue";
+import profilePic from "@/assets/pictures/tails2.jpg";
 </script>
