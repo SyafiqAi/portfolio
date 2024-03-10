@@ -3,8 +3,8 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="123.40845mm"
-   height="103.31653mm"
+   width="100%"
+   height="100%"
    viewBox="0 0 123.40845 103.31653"
    version="1.1"
    id="svg5"

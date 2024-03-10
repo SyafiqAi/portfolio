@@ -17,8 +17,8 @@ function isMobile() {
 </script>
 
 <template>
-  <DesktopNavbar v-if="!isMobile()" />
-  <MobileNavbar v-else />
+  <MobileNavbar v-if="isMobile()" />
+  <DesktopNavbar v-else />
 
   <div>
     <RouterView />

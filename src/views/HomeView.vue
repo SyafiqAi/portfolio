@@ -3,7 +3,7 @@ import Introduction from '../components/Introduction.vue'
 import Education from '../components/Education.vue'
 import Experience from '../components/Experience.vue'
 import Technologies from '../components/Technologies.vue'
-import GeometryArt from '../assets/GeomteryArt.vue'
+import GeometryArt from '../assets/GeometryArt.vue'
 import { ref } from 'vue'
 import { getRandomColor } from '../utilities/colors.js'
 
@@ -23,7 +23,7 @@ const color = ref('white')
       </div>
     </div>
     <div class="hidden lg:flex justify-center">
-      <figure @click="() => {color = getRandomColor()}":class="color" class="transition-colors duration-1000">
+      <figure @click="() => {color = getRandomColor()}":class="color" class="transition-colors duration-1000 h-96">
         <GeometryArt />
       </figure>
     </div>
