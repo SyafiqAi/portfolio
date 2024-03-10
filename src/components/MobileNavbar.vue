@@ -1,5 +1,5 @@
 <template>
-    <nav class="fixed top-0 shadow-md dark:bg-black bg-trueWhite w-lvw" ref="navbar">
+    <nav class="sticky top-0 shadow-md dark:bg-black bg-trueWhite w-lvw" ref="navbar">
         <div @click="toggleDark()" class="ml-auto p-6 inline-block">
             <MoonIcon v-if="isDark"/>
             <SunIcon v-else/>
