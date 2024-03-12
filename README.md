@@ -1,6 +1,10 @@
-# port4
+# Portfolio
 
-This template should help get you started developing with Vue 3 in Vite.
+Portfolio for Syafiq Aiman
+
+## Hosting URL
+
+syafiq-aiman.web.app
 
 ## Recommended IDE Setup
 
@@ -26,4 +30,10 @@ npm run dev
 
 ```sh
 npm run build
+```
+### Compile and Deploy on Firebase
+
+Must be logged in to the Firebase CLI
+```sh
+./deploy.bat
 ```
