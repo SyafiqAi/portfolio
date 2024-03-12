@@ -4,7 +4,7 @@ Portfolio for Syafiq Aiman
 
 ## Hosting URL
 
-syafiq-aiman.web.app
+[syafiq-aiman.web.app](https://syafiq-aiman.web.app/)
 
 ## Recommended IDE Setup
 
