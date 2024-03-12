@@ -1,5 +1,5 @@
 <template>
-    <section>
+    <section class="mb-16">
         <h2 class="">Experience</h2>
 
         <div class="*:pb-6 lg:max-w-[40vw]">

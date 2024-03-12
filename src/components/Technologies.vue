@@ -1,5 +1,5 @@
 <template>
-    <section class="">
+    <section class="mb-16">
         <h2 class="">Technologies</h2>
             <ul class="*:pb-6 lg:max-w-[40vw]">
                 <li>

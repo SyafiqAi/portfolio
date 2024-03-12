@@ -12,7 +12,7 @@ const color = ref('')
 </script>
 
 <template>
-  <header class="lg:h-screen flex justify-center mt-32 lg:items-center lg:justify-normal lg:mx-32 lg:my-0 lg:grid lg:grid-cols-2 lg:py-[72px]">
+  <header class="lg:h-screen flex justify-center my-32 lg:items-center lg:justify-normal lg:mx-32 lg:my-0 lg:grid lg:grid-cols-2 lg:py-[72px]">
     <div class="flex justify-center">
       <div>
         <span>Hello, I'm</span>
@@ -29,19 +29,11 @@ const color = ref('')
     </div>
   </header>
   <main class="m-8 lg:my-16 lg:mx-64">
-      <div class="h-16"></div>
-
       <Introduction />
 
-      <div class="h-16"></div>
-      
       <Education />
 
-      <div class="h-16"></div>
-
       <Experience />
-
-      <div class="h-16"></div>
 
       <Technologies />
   </main>
