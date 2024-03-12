@@ -1,8 +1,9 @@
 <script setup>
-import Introduction from '../components/Introduction.vue'
-import Education from '../components/Education.vue'
-import Experience from '../components/Experience.vue'
-import Technologies from '../components/Technologies.vue'
+import Introduction from '../sections/Introduction.vue'
+import Education from '../sections/Education.vue'
+import Experience from '../sections/Experience.vue'
+import Technologies from '../sections/Technologies.vue'
+import Projects from '../sections/Projects.vue'
 import GeometryArt from '../assets/figures/GeometryArt.vue'
 import { ref } from 'vue'
 import { changeColor } from '../utilities/colors.js'
@@ -36,5 +37,7 @@ const color = ref('')
       <Experience />
 
       <Technologies />
+
+      <Projects />
   </main>
 </template>

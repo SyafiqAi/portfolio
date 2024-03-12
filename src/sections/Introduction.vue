@@ -1,7 +1,5 @@
 <template>
-    <section class="mb-16">
-        <h2>Introduction</h2>
-        <div class="*:pb-6 lg:max-w-[40vw]">
+    <SectionTemplate title="Introduction"> 
             <p>
                 I'm a final year student at University Tunku Abdul Rahman.
             </p>
@@ -9,6 +7,9 @@
                 My internship at <strong>Digital Systems Malaysia</strong> has allowed me to apply my skills
                 in a professional setting and further develop my interest in web development. 
             </p>
-        </div>
-    </section>
+    </SectionTemplate>
 </template>
+
+<script setup>
+import SectionTemplate from './SectionTemplate.vue'
+</script>

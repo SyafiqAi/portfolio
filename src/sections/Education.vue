@@ -1,10 +1,10 @@
 <template>
-    <section class="mb-16">
-        <h2>Education</h2>
-
-        <div class="*:pb-6 lg:max-w-[40vw]">
+    <SectionTemplate title="Education"> 
             <p>Universiti Tenaga Nasional <br> Diploma in Mechanical Engineering</p>
             <p>Universiti Tunku Abdul Rahman <br> Degree in Applied Mathematics <br> with Computing - (Currently studying)</p>
-        </div>
-    </section>
+    </SectionTemplate>
 </template>
+
+<script setup>
+import SectionTemplate from './SectionTemplate.vue'
+</script>

@@ -1,8 +1,5 @@
 <template>
-    <section class="mb-16">
-        <h2 class="">Experience</h2>
-
-        <div class="*:pb-6 lg:max-w-[40vw]">
+    <SectionTemplate title="Experience"> 
             <p>
                 Digital Systems Malaysia - Worked in a team of 7 developers, contributing to the 
                 development of a customer-facing website using an <strong>agile development</strong> 
@@ -18,6 +15,9 @@
                 Vue's features and seek guidance from the experienced developers in my team. I was 
                 able to grasp quickly the concepts and contribute to the team.
             </p>
-        </div>
-    </section>
+    </SectionTemplate>
 </template>
+
+<script setup>
+import SectionTemplate from './SectionTemplate.vue'
+</script>
