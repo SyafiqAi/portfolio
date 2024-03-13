@@ -7,6 +7,7 @@
       SyafiqAi
     </a>
 
+    <br>
 
     <div class="flex items-center">
       <figure class="size-12 inline-block mr-2">
