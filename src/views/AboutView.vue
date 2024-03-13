@@ -7,7 +7,7 @@
         <div
           class="bg-white size-full flex justify-center items-center text-black text-9xl"
         >
-          >_<
+          :P
         </div>
         <!-- <img :src="profilePic" alt="" /> -->
       </figure>

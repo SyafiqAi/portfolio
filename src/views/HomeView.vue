@@ -1,43 +1,86 @@
 <script setup>
-import Introduction from '../sections/Introduction.vue'
-import Education from '../sections/Education.vue'
-import Experience from '../sections/Experience.vue'
-import Technologies from '../sections/Technologies.vue'
-import Projects from '../sections/Projects.vue'
-import GeometryArt from '../assets/figures/GeometryArt.vue'
-import { ref } from 'vue'
-import { changeColor } from '../utilities/colors.js'
+import Introduction from "../sections/Introduction.vue";
+import Education from "../sections/Education.vue";
+import Experience from "../sections/Experience.vue";
+import Technologies from "../sections/Technologies.vue";
+import Projects from "../sections/Projects.vue";
+import GeometryArt from "../assets/figures/GeometryArt.vue";
+import { ref } from "vue";
+import { changeColor } from "../utilities/colors.js";
+import GithubLogo from "@/assets/logos/GithubLogo.vue";
+import EmailLogo from "@/assets/logos/EmailLogo.vue";
 
-const color = ref('')
-
+const color = ref("");
 </script>
 
 <template>
-  <header class="lg:h-screen flex justify-center my-32 lg:items-center lg:justify-normal lg:mx-32 lg:my-0 lg:grid lg:grid-cols-2 lg:py-[72px]">
+  <header
+    class="lg:h-screen flex justify-center my-32 lg:items-center lg:justify-normal lg:mx-32 lg:my-0 lg:grid lg:grid-cols-2 lg:py-[72px]"
+  >
     <div class="flex justify-center">
       <div>
         <span>Hello, I'm</span>
         <br />
-        <h1 @click="() => {color = changeColor()}" :class="color" class="select-none font-black text-8xl mb-6 lg:text-9xl duration-500 transition-colors">
+        <h1
+          @click="
+            () => {
+              color = changeColor();
+            }
+          "
+          :class="color"
+          class="select-none font-black text-8xl mb-6 lg:text-9xl duration-500 transition-colors"
+        >
           Syafiq
         </h1>
       </div>
     </div>
     <div class="hidden lg:flex justify-center">
-      <figure @click="() => {color = changeColor()}":class="color" class="transition-colors duration-500 h-96">
+      <figure
+        @click="
+          () => {
+            color = changeColor();
+          }
+        "
+        :class="color"
+        class="transition-colors duration-500 h-96"
+      >
         <GeometryArt />
       </figure>
     </div>
   </header>
   <main class="m-8 lg:my-16 lg:mx-64">
-      <Introduction />
+    <Introduction />
 
-      <Education />
+    <Education />
 
-      <Experience />
+    <Experience />
 
-      <Technologies />
+    <Technologies />
 
-      <Projects />
+    <Projects />
+
   </main>
+
+  <footer
+    class="h-64 w-full flex items-center justify-center border-t mt-32"
+  >
+    <!-- Syafiq -->
+    <div class="lg:flex justify-around lg:w-full">
+      <a href="https://github.com/SyafiqAi" class="flex items-center">
+        <figure class="size-12 inline-block mr-2">
+          <GithubLogo />
+        </figure>
+        SyafiqAi
+      </a>
+
+      <br />
+
+      <div class="flex items-center">
+        <figure class="size-12 inline-block mr-2">
+          <EmailLogo />
+        </figure>
+        isyafiq@gmail.com
+      </div>
+    </div>
+  </footer>
 </template>
