@@ -39,7 +39,7 @@
         </p>
       </section>
 
-      <Footer></Footer>
+      <Footer :responsive="true"></Footer>
     </main>
   </div>
 </template>

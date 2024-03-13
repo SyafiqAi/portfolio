@@ -65,7 +65,7 @@ const color = ref("");
   <div
     class="h-64 w-full flex items-center justify-center border-t mt-32"
   >
-  <Footer></Footer>
+  <Footer :responsive="true"></Footer>
 
   </div>
 </template>
