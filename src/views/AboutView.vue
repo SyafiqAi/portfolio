@@ -13,10 +13,10 @@
       </figure>
     </div>
     <main
-      class="lg:w-[36rem] mx-8 mb-8 lg:mb-0 flex flex-col items-center lg:items-start"
+      class="lg:max-w-[50vw] mx-8 mb-12 lg:mb-0 flex flex-col items-center lg:items-start"
     >
       <h1 class="font-bold text-5xl mb-12">About</h1>
-      <section>
+      <section class="mb-12">
         <p>
           I am Syafiq Aiman and I am a student with an interest in web
           development. I first became interested in this field during my
@@ -39,7 +39,7 @@
         </p>
       </section>
 
-      <div class="mt-12 lg:flex justify-around lg:w-full">
+      <div class="lg:flex justify-around lg:w-full">
         <a href="https://github.com/SyafiqAi" class="flex items-center">
           <figure class="size-12 inline-block mr-2">
             <GithubLogo />
