@@ -9,6 +9,7 @@ import { ref } from "vue";
 import { changeColor } from "../utilities/colors.js";
 import GithubLogo from "@/assets/logos/GithubLogo.vue";
 import EmailLogo from "@/assets/logos/EmailLogo.vue";
+import Footer from "@/components/Footer.vue"
 
 const color = ref("");
 </script>
@@ -61,26 +62,10 @@ const color = ref("");
 
   </main>
 
-  <footer
+  <div
     class="h-64 w-full flex items-center justify-center border-t mt-32"
   >
-    <!-- Syafiq -->
-    <div class="lg:flex justify-around lg:w-full">
-      <a href="https://github.com/SyafiqAi" class="flex items-center">
-        <figure class="size-12 inline-block mr-2">
-          <GithubLogo />
-        </figure>
-        SyafiqAi
-      </a>
+  <Footer></Footer>
 
-      <br />
-
-      <div class="flex items-center">
-        <figure class="size-12 inline-block mr-2">
-          <EmailLogo />
-        </figure>
-        isyafiq@gmail.com
-      </div>
-    </div>
-  </footer>
+  </div>
 </template>
