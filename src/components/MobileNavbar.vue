@@ -49,18 +49,18 @@ watch(isDark, () => {
 // the page scrolls to the top.
 // we have to manually scroll to the current position
 // when adding and removing the class.
-const html = document.documentElement;
-let scrollTop;
-watch(navbarVisible, () => {
-    if(navbarVisible.value) {
-        scrollTop = html.scrollTop;
-        document.body.className = `disable-scrollbar`
-        document.body.style.top = `-${scrollTop}px`
-        // tailwind doesn't allow dynamic classnames
-        // so had to resort to inline style
-    } else {
-        document.body.className = ''
-        html.scrollTop = scrollTop;
-    }
-})
+// const html = document.documentElement;
+// let scrollTop;
+// watch(navbarVisible, () => {
+//     if(navbarVisible.value) {
+//         scrollTop = html.scrollTop;
+//         document.body.className = `disable-scrollbar`
+//         document.body.style.top = `-${scrollTop}px`
+//         // tailwind doesn't allow dynamic classnames
+//         // so had to resort to inline style
+//     } else {
+//         document.body.className = ''
+//         html.scrollTop = scrollTop;
+//     }
+// })
 </script>

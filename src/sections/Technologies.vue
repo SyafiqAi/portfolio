@@ -2,29 +2,31 @@
     <SectionTemplate title="Technologies"> 
         <ul class="*:mb-6">
             <li>
-                Fundamentals of <strong>HTML</strong> <strong>CSS</strong> and <strong>JS</strong>.
+                HTML, CSS and JS
             </li>
             <li>
-                Frameworks like <strong>Vue</strong> and <strong>React</strong>.
+                Vue, React
             </li>
             <li>
-                Styling with <strong>Tailwind CSS</strong>.
+                TailwindCSS
             </li>
             <li>
-                Scaffolding projects with <strong>Vite</strong>.
+                Vite
             </li>
             <li>
-                Version control with <strong>Git</strong>.
+                Git
             </li>
             <li>
-                Use <strong>Firebase</strong> to <strong>host websites</strong> and store data
-                using its <strong>realtime database</strong>.
+                Microsoft Azure
             </li>
             <li>
-                Work in the <strong>NodeJS</strong> runtime environment.
+                Firebase
             </li>
             <li>
-                Also good with <strong>Inkscape</strong> for vector graphic design.
+                NodeJS, npm
+            </li>
+            <li>
+                Inkscape
             </li>
         </ul>
     </SectionTemplate>
