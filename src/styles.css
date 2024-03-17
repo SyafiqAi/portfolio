@@ -7,6 +7,8 @@
     @apply bg-trueWhite text-black dark:bg-black dark:text-white;
   }
 
+  html{scroll-behavior:smooth}
+
   .disable-scrollbar {
     position: fixed;
     overflow-y: scroll;
