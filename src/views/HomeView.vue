@@ -50,9 +50,10 @@ const color = ref("");
       </figure>
     </div>
   </header>
-  <main class="m-8 lg:my-16 lg:mx-64">
 
-    <AsideTOC />
+  <div class="m-8 lg:my-16 lg:mx-72 lg:grid grid-cols-[80%_20%]">
+  <main class="">
+
     
     <Introduction />
 
@@ -65,6 +66,11 @@ const color = ref("");
     <Projects />
 
   </main>
+
+    <AsideTOC />
+    
+  </div>
+
 
   <div
     class="h-64 w-full flex items-center justify-center border-t mt-32"

@@ -1,7 +1,7 @@
 <template>
-    <aside class="size-60 sticky top-20 ml-auto flex flex-col px-10 py-5">
-        <div>On this page</div>
-        <a v-for="(section, index) in sections" :href="`#${section.id}`" class="p-1 ml-2 opacity-70 hover:bg-white hover:bg-opacity-5" :class="{'bg-white bg-opacity-10': index==activeSectionIndex }">{{ getSectionTitle(section) }}</a>
+    <aside class="size-60 sticky top-32 ml-auto lg:flex flex-col px-10 hidden">
+        <div class="font-bold">On this page</div>
+        <a v-for="(section, index) in sections" :href="`#${section.id}`" class="p-1 ml-2 hover:bg-black dark:hover:bg-white hover:bg-opacity-5 dark:hover:bg-opacity-5" :class="{'bg-black dark:bg-white bg-opacity-10 dark:bg-opacity-10': index==activeSectionIndex }">{{ getSectionTitle(section) }}</a>
     </aside>
 </template>
 
@@ -10,7 +10,7 @@ import { onMounted, onUnmounted, ref } from "vue"
 
 const sections = ref([]);
 const activeSectionIndex = ref(null);
-const topOffset = 170;
+const topOffset = 100;
 
 onMounted(() => {
     sections.value = document.querySelectorAll('h2');
