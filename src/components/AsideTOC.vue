@@ -1,5 +1,5 @@
 <template>
-    <aside class="size-60 sticky top-32 ml-auto lg:flex flex-col px-10 hidden">
+    <aside class="min-w-60 h-fit sticky top-32 lg:flex flex-col ml-16 px-5 hidden border-l">
         <div class="font-bold">On this page</div>
         <a v-for="(section, index) in sections" :href="`#${section.id}`" class="p-1 ml-2 hover:bg-black dark:hover:bg-white hover:bg-opacity-5 dark:hover:bg-opacity-5" :class="{'bg-black dark:bg-white bg-opacity-10 dark:bg-opacity-10': index==activeSectionIndex }">{{ getSectionTitle(section) }}</a>
     </aside>

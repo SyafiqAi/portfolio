@@ -51,10 +51,9 @@ const color = ref("");
     </div>
   </header>
 
-  <div class="m-8 lg:my-16 lg:mx-72 lg:grid grid-cols-[80%_20%]">
+  <div class="m-8 lg:my-16 lg:mx-72 lg:grid grid-cols-[15%_70%_15%]">
+  <div></div>
   <main class="">
-
-    
     <Introduction />
 
     <Education />
