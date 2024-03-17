@@ -1,6 +1,6 @@
 <template>
-    <section class="mb-16">
-        <h2>{{ title }}</h2>
+    <section class="mb-32">
+        <h2 :id="title.toLowerCase()">{{ title }}</h2>
         <div class="*:mb-6 lg:max-w-[40vw]">
             <slot></slot>
         </div>

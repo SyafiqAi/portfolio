@@ -4,6 +4,7 @@ import Education from "../sections/Education.vue";
 import Experience from "../sections/Experience.vue";
 import Technologies from "../sections/Technologies.vue";
 import Projects from "../sections/Projects.vue";
+import AsideTOC from "../components/AsideTOC.vue"
 import GeometryArt from "../assets/figures/GeometryArt.vue";
 import { ref } from "vue";
 import { changeColor } from "../utilities/colors.js";
@@ -50,6 +51,9 @@ const color = ref("");
     </div>
   </header>
   <main class="m-8 lg:my-16 lg:mx-64">
+
+    <AsideTOC />
+    
     <Introduction />
 
     <Education />
