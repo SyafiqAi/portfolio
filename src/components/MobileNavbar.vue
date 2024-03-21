@@ -1,5 +1,5 @@
 <template>
-    <nav class="sticky top-0 shadow-md dark:bg-black bg-trueWhite w-full" ref="navbar">
+    <nav class="sticky top-0 shadow-md dark:bg-black bg-trueWhite w-full z-10" ref="navbar">
         <div @click="toggleDark()" class="ml-auto p-6 inline-block">
             <MoonIcon v-if="isDark"/>
             <SunIcon v-else/>
@@ -45,22 +45,25 @@ watch(isDark, () => {
 })
 
 // disable scrolling when mobile navbar is visible.
-// when adding and removing the disable-scrollbar class, 
+// when adding and removing the 'disable-scrollbar' class, 
 // the page scrolls to the top.
 // we have to manually scroll to the current position
 // when adding and removing the class.
-// const html = document.documentElement;
-// let scrollTop;
-// watch(navbarVisible, () => {
-//     if(navbarVisible.value) {
-//         scrollTop = html.scrollTop;
-//         document.body.className = `disable-scrollbar`
-//         document.body.style.top = `-${scrollTop}px`
-//         // tailwind doesn't allow dynamic classnames
-//         // so had to resort to inline style
-//     } else {
-//         document.body.className = ''
-//         html.scrollTop = scrollTop;
-//     }
-// })
+let scrollTop;
+watch(navbarVisible, () => {
+    const html = document.documentElement;
+    const body = document.body;
+    if(navbarVisible.value) {
+        scrollTop = html.scrollTop;
+        body.className = `disable-scrollbar`
+        body.style.top = `-${scrollTop}px`
+        // tailwind doesn't allow dynamic classnames
+        // so had to resort to inline style
+    } else {
+        html.style.scrollBehavior = 'auto';
+        body.className = ''
+        html.scrollTop = scrollTop;
+        html.style.scrollBehavior = 'smooth';
+    }
+})
 </script>
