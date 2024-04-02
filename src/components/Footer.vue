@@ -1,6 +1,6 @@
 <template>
   <footer :class="footerStyle">
-    <a href="https://github.com/SyafiqAi" class="flex items-center mb-8 lg:mb-0">
+    <a href="https://github.com/SyafiqAi" target="_blank" class="flex items-center mb-8 lg:mb-0">
       <figure class="size-12 inline-block mr-2">
         <GithubLogo />
       </figure>

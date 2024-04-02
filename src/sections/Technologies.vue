@@ -5,7 +5,7 @@
                 HTML, CSS and JS
             </li>
             <li>
-                Vue, React
+                Vue, Angular, React
             </li>
             <li>
                 TailwindCSS
