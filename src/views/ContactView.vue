@@ -5,7 +5,7 @@
     <header class="flex justify-center">
       <div>
         <h1
-          class="select-none font-black text-7xl mb-16 lg:mb-0 lg:text-9xl duration-100 transition-colors text-center"
+          class="select-none font-black text-7xl mb-16 lg:mb-0 lg:text-9xl text-center"
         >
           Let's get in touch!
         </h1>
