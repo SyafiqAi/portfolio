@@ -6,13 +6,8 @@ import Technologies from "../sections/Technologies.vue";
 import Projects from "../sections/Projects.vue";
 import AsideTOC from "../components/AsideTOC.vue"
 import GeometryArt from "../assets/figures/GeometryArt.vue";
-import { ref } from "vue";
-import { changeColor } from "../utilities/colors.js";
-import GithubLogo from "@/assets/logos/GithubLogo.vue";
-import EmailLogo from "@/assets/logos/EmailLogo.vue";
 import Footer from "@/components/Footer.vue"
 
-const color = ref("");
 </script>
 
 <template>
@@ -24,13 +19,7 @@ const color = ref("");
         <span>Hello, I'm</span>
         <br />
         <h1
-          @click="
-            () => {
-              color = changeColor();
-            }
-          "
-          :class="color"
-          class="select-none font-black text-8xl mb-6 lg:text-9xl duration-500 transition-colors"
+          class="select-none font-black text-8xl mb-6 lg:text-9xl"
         >
           Syafiq
         </h1>
@@ -38,13 +27,7 @@ const color = ref("");
     </div>
     <div class="hidden lg:flex justify-center">
       <figure
-        @click="
-          () => {
-            color = changeColor();
-          }
-        "
-        :class="color"
-        class="transition-colors duration-500 h-96"
+        class="h-96"
       >
         <GeometryArt />
       </figure>
