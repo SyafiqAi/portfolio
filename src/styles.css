@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply bg-trueWhite text-offBlack dark:bg-black dark:text-white;
+    @apply bg-trueWhite text-black dark:bg-black dark:text-white;
   }
 
   html{scroll-behavior:smooth}
