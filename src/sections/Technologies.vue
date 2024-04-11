@@ -26,7 +26,7 @@
                 NodeJS, npm
             </li>
             <li>
-                Inkscape
+                Inkscape (For graphic design)
             </li>
         </ul>
     </SectionTemplate>

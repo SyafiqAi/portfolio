@@ -1,21 +1,11 @@
 <template>
   <div
-    class="lg:h-screen justify-center lg:items-center lg:justify-normal lg:mx-32 lg:my-0 lg:grid lg:grid-cols-2 z-0 lg:py-[72px]"
+    class="lg:h-screen flex justify-center lg:items-center lg:mx-32 lg:my-0 z-0"
   >
-    <div class="flex justify-center my-12">
-      <figure class="size-80 lg:size-96 rounded-full overflow-hidden">
-        <div
-          class="bg-white size-full flex justify-center items-center text-black text-9xl"
-        >
-          :P
-        </div>
-        <!-- <img :src="profilePic" alt="" /> -->
-      </figure>
-    </div>
     <main
       class="lg:max-w-[50vw] mx-8 mb-12 lg:mb-0 flex flex-col items-center lg:items-start"
     >
-      <h1 class="font-bold text-5xl mb-12">About</h1>
+      <h1 class="font-bold text-8xl my-12">About</h1>
       <section class="mb-12">
         <p>
           I am Syafiq Aiman and I am a student with an interest in web
@@ -45,8 +35,5 @@
 </template>
 
 <script setup>
-import EmailLogo from "@/assets/logos/EmailLogo.vue";
-import GithubLogo from "@/assets/logos/GithubLogo.vue";
-import profilePic from "@/assets/pictures/tails2.jpg";
 import Footer from "@/components/Footer.vue"
 </script>
